@@ -1,0 +1,70 @@
+:root {
+  --sub: 180px;
+}
+
+body {
+  font-family: system-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #2c2f33;
+  padding: 10px 30px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.problema {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.js-logo {
+  background-image: url("../resources/js_logo.svg");
+  background-size: contain;
+  width: 50px;
+  background-repeat: no-repeat;
+  aspect-ratio: 1;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+}
+
+.reto {
+  margin: 0;
+  line-height: 30px;
+  color: #ff0;
+}
+
+.tema::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 26px;
+  top: 56px;
+  height: 2px;
+  width: 0px;
+  background-color: #000;
+  animation: line 1s ease-in-out infinite alternate;
+}
+
+@keyframes line {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: var(--sub);
+  }
+}
+
+.tema {
+  margin: 0 16px 10px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.res {
+  font-weight: bold;
+  font-style: italic;
+}
