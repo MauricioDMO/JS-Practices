@@ -1,0 +1,11 @@
+/* :root {
+  --sub: inherit;
+} */
+
+li {
+  padding-left: 5px;
+}
+
+li::marker {
+  font-weight: bold;
+}
