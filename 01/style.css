@@ -1,0 +1,13 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button[type="submit"] {
+  margin-top: 5px;
+}
+
+#res {
+  text-align: center;
+}
